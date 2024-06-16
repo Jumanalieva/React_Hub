@@ -17,11 +17,11 @@ export const useGetData = () => {
     const [eventData, setData] = useState<EventData[]>([]);
 
     async function handleDataFetch() {
-        const result = await server_calls.get();  // Adjust the endpoint if needed
-        // Map the result to format the Google Drive URL to the photo_url field
+        const result = await server_calls.get();  
+       
         const formattedData = result.map((event: any) => ({
             ...event,
-            photo_url: `https://drive.google.com/uc?export=view&id=${event.photo_url}` // Assuming event.photo_url contains the file ID
+            photo_url: `https://drive.google.com/uc?export=view&id=${event.photo_url}` 
         }));
         setData(formattedData);
     }

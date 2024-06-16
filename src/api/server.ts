@@ -2,7 +2,7 @@ const token = '8522fc4afcc8e0b250de7bffe10abce1f007e79b40189aed';
 
 export const server_calls = {
   get: async () => {
-    const response = await fetch('http://127.0.0.1:5000/api/events', {
+    const response = await fetch('https://flask-hub.onrender.com/api/events', {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
@@ -18,7 +18,7 @@ export const server_calls = {
   },
 
   create: async (data: any = {}) => {
-    const response = await fetch('http://127.0.0.1:5000/api/events', {
+    const response = await fetch('https://flask-hub.onrender.com/api/events', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -35,7 +35,7 @@ export const server_calls = {
   },
 
   update: async (id: string, data: any = {}) => {
-    const response = await fetch(`http://127.0.0.1:5000/api/events/${id}`, {
+    const response = await fetch(`https://flask-hub.onrender.com/api/events/${id}`, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',
@@ -52,7 +52,7 @@ export const server_calls = {
   },
 
   delete: async (id: string) => {
-    const response = await fetch(`http://127.0.0.1:5000/api/events/${id}`, {
+    const response = await fetch(`https://flask-hub.onrender.com/api/events/${id}`, {
       method: 'DELETE',
       headers: {
         'Content-Type': 'application/json',
