@@ -35,12 +35,12 @@ const Card: React.FC<CardProps> = ({
       </div>
       <div className="w-full md:w-1/2 p-5 flex flex-col justify-between">
         <div>
-          <h2 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl  text-stone-800 mb-6">{title}</h2>
-          <p className="text-black text-xl md:text-xl lg:text-2xl xl:text-2xl mt-2">{description}</p>
+          <h2 className="text-5xl md:text-5xl lg:text-6xl xl:text-8xl  text-stone-800 mb-6">{title}</h2>
+          <p className="text-black text-lg md:text-md lg:text-lg xl:text-xl mt-2">{description}</p>
         </div>
         <Link
           to={buttonUrl}
-          className="self-start mt-4 underline text-red-700 text-2xl md:text-2xl lg:text-2xl xl:text-3xl px-5 py-2 rounded-full bg-stone-200"
+          className="self-start mt-4 underline text-red-700 text-md md:text-lg lg:text-lg xl:text-xl px-5 py-2 rounded-full bg-stone-200"
         >
           {pageName}
         </Link>
