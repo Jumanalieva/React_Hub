@@ -1,2 +1,1 @@
-link1=https://react-hub-bix5.onrender.com
-link2=
+https://senior-hub.onrender.com
