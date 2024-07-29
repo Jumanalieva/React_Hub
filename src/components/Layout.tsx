@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useAuth0 } from '@auth0/auth0-react';
 import Footer from './Footer';
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
 
 interface LayoutProps {
   children: React.ReactNode;
