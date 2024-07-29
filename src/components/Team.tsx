@@ -56,7 +56,7 @@ const Team: React.FC = () => {
     <div className="container text-center mx-auto p-4 space-y-4">
       <TeamImage
         imageUrl={imageSeven}  
-        title="MEAT OUR TEAM"
+        title="MEET OUR TEAM"
       />
       {cardData.map((card, index) => ( 
         <TeamCard
